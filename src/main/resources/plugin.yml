@@ -1,0 +1,14 @@
+name: LilAirdrops
+version: 1.0.0
+author: Liliowy
+description: Your crates come from the skies above.
+api-version: 1.14
+main: me.liliowy.lilairdrops.LilAirdrops
+commands:
+  LilAirdrops:
+    aliases: [la, ad, airdrops, airdrop, lilairdrop]
+    description: Opens the main GUI for LilAirdrops.
+permissions:
+  lilairdrops.admin:
+    default: op
+    description: Allows a player to use /lilairdrops.

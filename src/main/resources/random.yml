@@ -1,0 +1,17 @@
+#####################################
+# Use this file for random airdrops #############################
+# The airdrops folder contains settings for different airdrops. #
+#################################################################
+Settings:
+  use-random-airdrops: true
+  interval-max: 10
+  interval-min: 3
+Airdrop-Chances:
+  basic: 100
+Flare:
+  item: FIREWORK_ROCKET
+  display-name: "&cFlare"
+  lore:
+    - "&eUse this to summon a random airdrop."
+  trail-particle: TOTEM
+  explosion-particle: REDSTONE

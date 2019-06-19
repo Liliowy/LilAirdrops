@@ -1,0 +1,69 @@
+########################################################
+# This file stores all the data for the basic airdrop. #################
+# Information can be found at: www.github.com/liliowy/lilairdrops/wiki #
+########################################################################
+Settings:
+  permission: lilairdrops.basic.open
+  interval-max: 10
+  interval-min: 10
+  remove-after: 10
+  when-closed:
+    destroy-airdrop: true
+    drop-items: false
+    put-items-in-inventory: false
+    drop-items-when-inventory-full: false
+  can-drop-in-water: true
+  can-drop-in-lava: true
+  slowness-multiplier: 100
+  disable-opening-while-opened: true
+  announcement-text: "%prefix% &eAn airdrop was spotted at &6%locationX%&e, &6%locationZ%&e."
+  announcement-location: CHAT
+  announce-to-other-worlds: true
+  block: CHEST
+  falling-particle: SMOKE_NORMAL
+  on-land-particle: SMOKE_NORMAL
+  landed-particle: SMOKE_NORMAL
+  hologram-text: "&4Basic Airdrop"
+  use-gui: true
+  gui-title: "&4Basic Airdrop"
+  use-offset-with-flare: true
+Inventory-Contents:
+  1:
+    command: "/eco give %player% 1000"
+    chance: 50
+  2:
+    command: "/bc &a%player% found a basic airdrop!"
+  3:
+    item:
+      item: WOODEN_SWORD
+      amount: 1
+      display-name: "&eBasic Sword"
+      lore:
+        - "&7You got this from a basic airdrop."
+      enchantments:
+        - knockback:1
+      chance: 90
+Flare:
+  item: FIREWORK_ROCKET
+  display-name: "&cBasic Flare"
+  lore:
+    - "&eUse this to summon a basic airdrop."
+  trail-particle: TOTEM
+  explosion-particle: REDSTONE
+Location:
+  world: world
+  maximum-x-bound: 10000
+  minimum-x-bound: -10000
+  maximum-z-bound: 10000
+  minimum-z-bound: -10000
+  maximum-y-bound: 100
+  offset-from-announcement: 100
+Hooks:
+  worldguard:
+    bypass-regions: false
+    disabled-regions:
+      - spawn
+  lockette:
+    lock-airdrop: false
+  core-protect:
+    logging: true

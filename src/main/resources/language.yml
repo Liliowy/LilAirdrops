@@ -1,0 +1,33 @@
+#########################################################
+# Use this file to edit the messages within the plugin. #
+#########################################################
+lang: en_gb
+Messages:
+  prefix : "[LilAirdrops]"
+  no-permission-on-command: "%prefix% &cYou do not have permission to do this!"
+  player-only-command: "%prefix% &cThe console cannot do this!"
+  no-permission-open-airdrop: "%prefix% You do not have permission to open this airdrop!"
+Inventory:
+  main-inventory:
+    title: "LilAirdrops"
+    items:
+      random-name: "&aRandom Airdrops"
+      random-lore:
+        - "&7Click to view and edit the random airdrops."
+      airdrops-name: "&bAirdrops"
+      airdrops-lore:
+        - "&7Click to view and edit airdrops."
+      current-name: "&cCurrent Airdrops"
+      current-lore:
+        - "&7Click to view and edit the airdrops in the world."
+      flare-name: "&dFlares"
+      flare-lore:
+        - "&7Click to give a player a flare."
+  random-inventory:
+    title: "Random Airdrops"
+  airdrops-inventory:
+    title: "Airdrops"
+  current-inventory:
+    title: "Current Airdrops"
+  flare-inventory:
+    title: "Flares"
